@@ -39,6 +39,7 @@ const Skills = () => {
             {/* Skill items */}
             <Tilt
               key={category.title}
+              tiltReverse={true}
               tiltMaxAngleX={20}
               tiltMaxAngleY={20}
               perspective={1000}

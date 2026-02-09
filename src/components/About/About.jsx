@@ -11,17 +11,19 @@ const About = () => {
     >
       {/* Background Glow Effect */}
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-purple-600/20 blur-[120px] -z-10" />
-      
+
       <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-12 lg:gap-20">
-        
         {/* Left Side: Content */}
         <div className="md:w-3/5 text-center md:text-left">
           <span className="text-purple-400 font-mono tracking-widest uppercase text-sm mb-4 block">
-            Welcome 
+            Welcome
           </span>
-          
+
           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold text-white mb-2 leading-[1.1]">
-            Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Supratim</span>
+            Hi, I'm{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+              Supratim
+            </span>
           </h1>
 
           <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 min-h-[40px]">
@@ -45,9 +47,11 @@ const About = () => {
           </div>
 
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl mb-10">
-            A B.Tech IT student with a passion for the <span className="text-white font-medium">MERN stack</span>. 
-            I bridge the gap between complex backend logic and pixel-perfect frontend experiences, 
-            turning caffeine into functional, scalable web applications.
+            A B.Tech IT student with a passion for the{" "}
+            <span className="text-white font-medium">MERN stack</span>. I bridge
+            the gap between complex backend logic and pixel-perfect frontend
+            experiences, turning caffeine into functional, scalable web
+            applications.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
@@ -58,14 +62,21 @@ const About = () => {
               className="group relative inline-flex items-center justify-center px-8 py-3.5 font-bold text-white transition-all duration-300 bg-purple-600 rounded-full hover:bg-purple-700 hover:shadow-[0_0_20px_rgba(130,69,236,0.6)]"
             >
               <span>DOWNLOAD CV</span>
-              <svg 
-                className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform" 
-                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              <svg
+                className="w-5 h-5 ml-2 group-hover:translate-y-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M19 14l-7 7m0 0l-7-7m7 7V3"
+                />
               </svg>
             </a>
-            
+
             <a
               href="#contact"
               className="px-8 py-3.5 rounded-full border border-gray-600 text-gray-300 font-bold hover:bg-gray-800 transition-all"
@@ -78,15 +89,22 @@ const About = () => {
         {/* Right Side: Image with refined Tilt */}
         <div className="md:w-2/5 flex justify-center">
           <Tilt
-            tiltMaxAngleX={15}
-            tiltMaxAngleY={15}
-            perspective={1500}
-            scale={1.02}
-            className="relative group"
+            tiltReverse={true}
+            tiltMaxAngleX={10}
+            tiltMaxAngleY={10}
+            perspective={1200}
+            scale={1.03}
+            transitionSpeed={1200}
+            gyroscope={true}
+            glareEnable={true}
+            glareMaxOpacity={0.15}
+            glareColor="white"
+            glarePosition="all"
+            className="relative group will-change-transform"
           >
             {/* Decorative ring */}
             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
-            
+
             <div className="relative w-56 h-56 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-gray-900/50">
               <img
                 src={profileImage}
@@ -96,7 +114,6 @@ const About = () => {
             </div>
           </Tilt>
         </div>
-        
       </div>
     </section>
   );
