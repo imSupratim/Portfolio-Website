@@ -96,10 +96,6 @@ const About = () => {
             scale={1.03}
             transitionSpeed={1200}
             gyroscope={true}
-            glareEnable={true}
-            glareMaxOpacity={0.15}
-            glareColor="white"
-            glarePosition="all"
             className="relative group will-change-transform"
           >
             {/* Decorative ring */}
