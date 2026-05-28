@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2026 Supratim Mandal. All rights reserved.
+          © 2027 Supratim Mandal. All rights reserved.
         </p>
       </div>
     </footer>
