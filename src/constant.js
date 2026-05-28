@@ -43,6 +43,7 @@ import bppimtLogo from './assets/education_logo/BPPIMT_logo.jpg'
 import aiLearningAppImg from "./assets/work_logo/ai_learning_app.png"
 import aiResumeAnalyzer from "./assets/work_logo/ai_resume_analyzer.png"
 import financeManager from "./assets/work_logo/finance_manager.png"
+import visu_algo from "./assets/work_logo/visu_algo.png"
 
 
 export const SkillsInfo = [
@@ -56,7 +57,7 @@ export const SkillsInfo = [
       { name: 'React JS', logo: reactjsLogo },
       // { name: 'Angular', logo: angularLogo },
       // { name: 'Redux', logo: reduxLogo },
-      // { name: 'Next JS', logo: nextjsLogo },
+      { name: 'Next JS', logo: nextjsLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       // { name: 'GSAP', logo: gsapLogo },
       // { name: 'Material UI', logo: materialuiLogo },
@@ -188,6 +189,17 @@ export const SkillsInfo = [
       github: "https://github.com/imSupratim/Finance-Manager-App",
       webapp: "https://finance-manager-app-one.vercel.app",
     },
+    {
+      id: 3,
+      title: "Algorithm Visualizer (under construction)",
+      description: "DSA is fun but what about when we mix DSA algos with web dev concepts, You're right you can visualize those algorithms with eyes which you used to dry run are now can be seen. Sorting, searching and many more interacting bars, custom speed control everything which are needed to understand that algo better.",
+      image: visu_algo,
+      tags: ["NextJs", "JavaScript"],
+      github: "https://github.com/imSupratim/Algorithm-_Visualizer",
+      webapp: "https://algorithm-visualizer-blush-pi.vercel.app/",
+
+    },
+
    
     
   ];  
