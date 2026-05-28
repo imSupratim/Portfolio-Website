@@ -44,6 +44,7 @@ import aiLearningAppImg from "./assets/work_logo/ai_learning_app.png"
 import aiResumeAnalyzer from "./assets/work_logo/ai_resume_analyzer.png"
 import financeManager from "./assets/work_logo/finance_manager.png"
 import visu_algo from "./assets/work_logo/visu_algo.png"
+import civic_pulse from "./assets/work_logo/civic_pulse.png"
 
 
 export const SkillsInfo = [
@@ -97,7 +98,7 @@ export const SkillsInfo = [
       { name: 'Postman', logo: postmanLogo },
       { name: 'Compass', logo: mcLogo },
       { name: 'Vercel', logo: vercelLogo },
-      // { name: 'Netlify', logo: netlifyLogo },
+      { name: 'Netlify', logo: netlifyLogo },
       // { name: 'Figma', logo: figmaLogo },
     ],
   },
@@ -197,7 +198,15 @@ export const SkillsInfo = [
       tags: ["NextJs", "JavaScript"],
       github: "https://github.com/imSupratim/Algorithm-_Visualizer",
       webapp: "https://algorithm-visualizer-blush-pi.vercel.app/",
-
+    },
+    {
+      id: 4,
+      title: "Civic-Pulse",
+      description:"The platform allows users to submit issues such as traffic congestion, hospital delays, water supply disruptions, sanitation problems, and public utility failures with detailed descriptions, location links, and image evidence, while an AI-powered system automatically categorizes problems, generates summaries, assigns urgency levels, and prioritizes reports based on severity. Secure authentication using Clerk (Email, Google, Social Login), AI-driven issue categorization and prioritization, Responsive dashboard for viewing and managing reports, Google Maps location integration",
+      image: civic_pulse,
+      tags: ["NextJs", "JavaScript", "Cloudinary", "Gemini API", "Clerk Authentication"],
+      github:"https://github.com/imSupratim/CivicPulse",
+      webapp:"https://civic-pulse-inky-nine.vercel.app/"
     },
 
    
