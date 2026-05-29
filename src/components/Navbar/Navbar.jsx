@@ -46,8 +46,8 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
-          : "bg-transparent"
+          ? "bg-[#050414]  shadow-md"
+          : "bg-[#050414] "
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
@@ -142,8 +142,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414]/80 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-200">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414]/65 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
+          <ul className="flex flex-col items-center space-y-4 py-4 text-xl text-gray-200">
             {menuItems.map((item) => (
               <li
                 key={item.id}
