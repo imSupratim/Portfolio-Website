@@ -45,6 +45,7 @@ import aiResumeAnalyzer from "./assets/work_logo/ai_resume_analyzer.png"
 import financeManager from "./assets/work_logo/finance_manager.png"
 import visu_algo from "./assets/work_logo/visu_algo.png"
 import civic_pulse from "./assets/work_logo/civic_pulse.png"
+import codeforge from "./assets/work_logo/codeforge.png"
 
 
 export const SkillsInfo = [
@@ -208,6 +209,16 @@ export const SkillsInfo = [
       github:"https://github.com/imSupratim/CivicPulse",
       webapp:"https://civic-pulse-inky-nine.vercel.app/"
     },
+
+    {
+      id: 5,
+      title: "Code-Forge",
+      description:"Developed a coding practice platform that enables users to solve algorithmic problems, maintain a history of submissions, review previously written code, and efficiently prepare using topic-based problem categorization.",
+      image: codeforge,
+      tags: ["ReactJs", "JavaScript", "ExpressJs", "MongoDB", "Monaco Editor", "Piston Engine"],
+      github: "https://github.com/imSupratim/Coding_Platform",
+      webapp: "https://coding-platform-gules.vercel.app/"
+    }
 
    
     
