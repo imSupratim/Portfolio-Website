@@ -71,7 +71,7 @@ const Work = () => {
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
+                className="text-white text-3xl cursor-pointer font-bold hover:text-purple-500"
               >
                 &times;
               </button>
