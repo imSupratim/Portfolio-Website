@@ -32,7 +32,7 @@ const About = () => {
               <Typewriter
                 words={[
                   "Fullstack Developer",
-                  "MERN Specialist",
+                  "Quick Learner",
                   "Tech Storyteller",
                   "Problem Solver",
                 ]}
@@ -48,10 +48,10 @@ const About = () => {
 
           <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-2xl mb-10">
             A B.Tech IT student with a passion for the{" "}
-            <span className="text-white font-medium">MERN stack</span>. I bridge
+            <span className="text-white font-medium">Fullstack Development</span>. I love to bridge
             the gap between complex backend logic and pixel-perfect frontend
-            experiences, turning caffeine into functional, scalable web
-            applications.
+            experiences, turning creative ideas into functional, scalable web
+            applications.  
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
