@@ -102,7 +102,7 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex  gap-4 px-10 md:px-15 mr-4 bg-linear-to-b from-gray-400 to-gray-500 py-2 rounded-2xl backdrop-blur-lg absolute bottom-1 left-4 right-4 z-20 ">
+                <div className="flex  gap-4 px-10 md:px-15 md:mr-4 bg-linear-to-b from-gray-400 to-gray-500 py-2 rounded-2xl backdrop-blur-lg absolute bottom-1 left-4 right-4 z-20 ">
                   <a
                     href={selectedProject.github}
                     target="_blank"
