@@ -102,14 +102,14 @@ const Work = () => {
                     </span>
                   ))}
                 </div>
-                <div className="flex  gap-4 px-15 mr-4 bg-linear-to-b from-gray-400 to-gray-500 py-2 rounded-2xl backdrop-blur-lg absolute bottom-1 left-4 right-4 flex gap-4 z-20 ">
+                <div className="flex  gap-4 px-10 md:px-15 mr-4 bg-linear-to-b from-gray-400 to-gray-500 py-2 rounded-2xl backdrop-blur-lg absolute bottom-1 left-4 right-4 z-20 ">
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-600 hover:bg-gray-700 hover:scale-105 text-gray-100 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 flex items-center justify-center bg-gray-600 hover:bg-gray-700 hover:scale-105 text-gray-100 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
                   >
-                    Github Repository
+                    Github
                   </a>
                   <a
                     href={selectedProject.webapp}
