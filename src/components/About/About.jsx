@@ -81,7 +81,7 @@ const About = () => {
               href="#contact"
               className="px-8 py-3.5 rounded-full border border-gray-600 text-gray-300 font-bold hover:bg-gray-800 transition-all"
             >
-              HIRE ME
+              GET IN TOUCH
             </a>
           </div>
         </div>

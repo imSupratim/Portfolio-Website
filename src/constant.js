@@ -46,6 +46,7 @@ import financeManager from "./assets/work_logo/finance_manager.png"
 import visu_algo from "./assets/work_logo/visu_algo.png"
 import civic_pulse from "./assets/work_logo/civic_pulse.png"
 import codeforge from "./assets/work_logo/codeforge.png"
+import code_review from "./assets/work_logo/code-review.png"
 
 
 export const SkillsInfo = [
@@ -218,6 +219,16 @@ export const SkillsInfo = [
       tags: ["ReactJs", "JavaScript", "ExpressJs", "MongoDB", "Monaco Editor", "Piston Engine"],
       github: "https://github.com/imSupratim/Coding_Platform",
       webapp: "https://coding-platform-gules.vercel.app/"
+    },
+
+    {
+      id:6,
+      title: "Code-Reviewer",
+      description: "Gemini Based Code reviewer. Give your code code and this project will detect any possible errors, anything that can be improved",
+      image: code_review,
+      tags: ["ReactJs", "JavaScript", "ExpressJs", "GeminiAPI"],
+      github: "https://github.com/imSupratim/Code-Reviewer",
+      webapp: "https://code-reviewer-pearl-six.vercel.app/"      
     }
 
    
