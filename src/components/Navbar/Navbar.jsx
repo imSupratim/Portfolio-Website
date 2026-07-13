@@ -5,7 +5,7 @@ import {
   FaInstagramSquare,
   FaFacebook,
 } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { SiLeetcode, SiGeeksforgeeks  } from "react-icons/si";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -50,7 +50,7 @@ const Navbar = () => {
           : "bg-[#050414] "
       }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
+      <div className="text-white py-5 flex gap-12 justify-between items-center">
         {/* Logo */}
         <div className="text-lg font-semibold cursor-pointer">
           <span className="text-[#8245ec]">&lt;</span>
@@ -119,6 +119,14 @@ const Navbar = () => {
             className="text-gray-300 hover:text-[#8245ec]"
           >
             <FaFacebook size={24} />
+          </a>
+
+          <a
+            href="https://www.geeksforgeeks.org/profile/supratmfu8?tab=activity"
+            target="_blank"
+            className="text-gray-300 hover:text-[#8245ec]"
+          >
+            <SiGeeksforgeeks size={24} />
           </a>
 
           
