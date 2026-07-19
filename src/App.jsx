@@ -10,6 +10,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from "./BlurBlob";
 import { Toaster } from "react-hot-toast";
+import CodingSection from "./components/CodingSection/CodingSection";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Skills />
           {/* <Experience /> */}
           <Work />
+          <CodingSection />
           <Education />
           <Contact />
           <Footer />
