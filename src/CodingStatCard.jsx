@@ -7,7 +7,10 @@ const CodingStatCard = ({
   link = "#",
 }) => {
   return (
-    <div className="group w-full max-w-sm rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+    <div className="group w-[280px]
+    sm:w-[300px]
+    md:w-[320px]
+    h-[420px] rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md shadow-lg hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2 overflow-hidden">
       {/* Image */}
       <div className="flex justify-center items-center bg-slate-900 h-44">
         <img
