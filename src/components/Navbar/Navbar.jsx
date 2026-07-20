@@ -5,7 +5,7 @@ import {
   FaInstagramSquare,
   FaFacebook,
 } from "react-icons/fa";
-import { SiLeetcode, SiGeeksforgeeks  } from "react-icons/si";
+import { SiLeetcode, SiGeeksforgeeks } from "react-icons/si";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -38,6 +38,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     // { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
+    { id: "coding", label: "Coding" },
     { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
@@ -45,9 +46,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled
-          ? "bg-[#050414]  shadow-md"
-          : "bg-[#050414] "
+        isScrolled ? "bg-[#050414]  shadow-md" : "bg-[#050414] "
       }`}
     >
       <div className="text-white py-5 flex gap-12 justify-between items-center">
@@ -102,7 +101,7 @@ const Navbar = () => {
             target="_blank"
             className="text-gray-300 hover:text-[#8245ec]"
           >
-            <SiLeetcode  size={24} />
+            <SiLeetcode size={24} />
           </a>
 
           <a
@@ -128,8 +127,6 @@ const Navbar = () => {
           >
             <SiGeeksforgeeks size={24} />
           </a>
-
-          
         </div>
 
         {/* Mobile Menu Icon*/}
@@ -204,6 +201,14 @@ const Navbar = () => {
                 className="text-gray-300 hover:text-white"
               >
                 <FaFacebook size={24} />
+              </a>
+
+              <a
+                href="https://www.geeksforgeeks.org/profile/supratmfu8?tab=activity"
+                target="_blank"
+                className="text-gray-300 hover:text-white"
+              >
+                <SiGeeksforgeeks size={24} />
               </a>
             </div>
           </ul>
