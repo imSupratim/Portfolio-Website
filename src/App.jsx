@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 import BlurBlob from "./BlurBlob";
 import { Toaster } from "react-hot-toast";
 import CodingSection from "./components/CodingSection/CodingSection";
+import ChatWidget from "./components/Chatbot/ChatWidget";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Education />
           <Contact />
           <Footer />
+          <ChatWidget />
         </div>
       </div>
     </>
