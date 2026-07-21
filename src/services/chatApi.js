@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://leo-chatbot-ck8z.onrender.com/api",
 });
 
 export const sendMessage = async (message) => {
