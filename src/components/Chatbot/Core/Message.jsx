@@ -21,7 +21,7 @@ function Message({ role, text }) {
         </span>
       )}
       <div
-        className={`max-w-[70%] rounded-xl p-3 ${
+        className={`max-w-[70%] rounded-xl p-3 text-sm  ${
           role === "user" ? "bg-blue-500 text-white" : "bg-gray-200 text-black"
         }`}
       >

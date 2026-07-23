@@ -13,7 +13,7 @@ const CodingSection = () => {
         <h2 className="text-4xl font-bold text-white">CODING PORTFOLIO</h2>
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
-          A collection of coding journey across various platforms
+          A collection of my coding journey across various platforms
         </p>
       </div>
 

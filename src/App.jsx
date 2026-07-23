@@ -1,5 +1,50 @@
-import Navbar from "./components/Navbar/Navbar";
+// import Navbar from "./components/Navbar/Navbar";
 
+// import "./App.css";
+// import About from "./components/About/About";
+// import Skills from "./components/Skills/Skills";
+// import Experience from "./components/Experience/Experience";
+// import Work from "./components/Work/Work";
+// import Education from "./components/Education/Education";
+// import Contact from "./components/Contact/Contact";
+// import Footer from "./components/Footer/Footer";
+// import BlurBlob from "./BlurBlob";
+// import { Toaster } from "react-hot-toast";
+// import CodingSection from "./components/CodingSection/CodingSection";
+// import ChatWidget from "./components/Chatbot/ChatWidget";
+
+// function App() {
+//   return (
+//     <>
+//       <Toaster/>
+
+//       <div className="bg-[#050414]">
+
+//         <BlurBlob  position={{ top: '35%', left: '20%' }} size={{ width: '30%', height: '40%' }}></BlurBlob>
+        
+//         <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+//         <div className="relative pt-20">
+//           <Navbar />
+//           <About />
+//           <Skills />
+//           {/* <Experience /> */}
+//           <Work />
+//           <CodingSection />
+//           <Education />
+//           <Contact />
+//           <Footer />
+//           <ChatWidget />
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
@@ -12,31 +57,77 @@ import BlurBlob from "./BlurBlob";
 import { Toaster } from "react-hot-toast";
 import CodingSection from "./components/CodingSection/CodingSection";
 import ChatWidget from "./components/Chatbot/ChatWidget";
+import { useEffect, useState } from "react";
+import Loader from "./components/Loader/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [loaderFading, setLoaderFading] = useState(false);
+  const [contentVisible, setContentVisible] = useState(false);
+
+  useEffect(() => {
+    // start fading the loader out
+    const fadeTimer = setTimeout(() => setLoaderFading(true), 2900);
+    // unmount loader once its fade-out finishes
+    const unmountTimer = setTimeout(() => setLoading(false), 2100 + 500);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(unmountTimer);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!loading) {
+      // next tick so the transition class change is picked up
+      const t = setTimeout(() => setContentVisible(true), 20);
+      return () => clearTimeout(t);
+    }
+  }, [loading]);
+
   return (
     <>
-      <Toaster/>
-
-      <div className="bg-[#050414]">
-
-        <BlurBlob  position={{ top: '35%', left: '20%' }} size={{ width: '30%', height: '40%' }}></BlurBlob>
-        
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
-
-        <div className="relative pt-20">
-          <Navbar />
-          <About />
-          <Skills />
-          {/* <Experience /> */}
-          <Work />
-          <CodingSection />
-          <Education />
-          <Contact />
-          <Footer />
-          <ChatWidget />
+      {loading && (
+        <div
+          className={`fixed inset-0 z-[9999] transition-opacity duration-500 ease-out ${
+            loaderFading ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          <Loader />
         </div>
-      </div>
+      )}
+
+      {!loading && (
+        <>
+          <Toaster />
+
+          <div
+            className={`bg-[#050414] transition-opacity duration-700 ease-out ${
+              contentVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <BlurBlob
+              position={{ top: "35%", left: "20%" }}
+              size={{ width: "30%", height: "40%" }}
+            ></BlurBlob>
+
+            <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+
+            <div className="relative pt-20">
+              <Navbar />
+              <About />
+              <Skills />
+              {/* <Experience /> */}
+              <Work />
+              <CodingSection />
+              <Education />
+              <Contact />
+              <Footer />
+              <ChatWidget />
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 }

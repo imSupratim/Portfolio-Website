@@ -8,8 +8,10 @@ function ChatWindow({ onClose }) {
         fixed
         bottom-26
         right-6
-        w-[380px]
-        h-[580px]
+        w-[80vw]
+        h-[69vh]
+        md:w-[380px]
+        md:h-[580px]
         bg-white
         rounded-2xl
         shadow-2xl
@@ -21,7 +23,7 @@ function ChatWindow({ onClose }) {
         <X />
       </button>
 
-      <div className="fixed bottom-24 right-6 w-[380px] h-[600px] bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col border border-gray-200">
+      <div className="fixed bottom-24 right-6 w-[80vw] h-[70vh] md:w-[380px] md:h-[600px] bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col border border-gray-200">
         <ChatContainer />
       </div>
     </div>

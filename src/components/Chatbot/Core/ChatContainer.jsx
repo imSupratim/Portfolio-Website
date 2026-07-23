@@ -42,7 +42,7 @@ function ChatContainer() {
       />
 
       <div>
-        <h2 className="text-2xl font-bold text-orange-500">
+        <h2 className="text-lg md:text-2xl font-bold text-orange-500">
           Leo
         </h2>
 
