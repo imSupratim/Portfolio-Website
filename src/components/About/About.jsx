@@ -56,7 +56,7 @@ const About = () => {
 
           <div className="flex flex-wrap gap-4 justify-center md:justify-start">
             <a
-              href="https://drive.google.com/file/d/1r1gDAC2QurvM0X_DS1Gf4b3FWnCrfiMS/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1aJe-G0tpBfIDdbPkw6In05D81b3Icun7/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center px-8 py-3.5 font-bold text-white transition-all duration-300 bg-purple-600 rounded-full hover:bg-purple-700 hover:shadow-[0_0_20px_rgba(130,69,236,0.6)]"
